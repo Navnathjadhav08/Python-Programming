@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+DirectoryFile Checksum Logger: Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+Logging activity started... : Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+DirectoryFile Checksum Logger: Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+CheckSums of Files Are Following:
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_02.py: 277979488e5182b0f842ea6516d044cb
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_1.py: ce31ce6090dfe3caed1ac4569e59e134
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_2 copy.py: 2dcc4e33b3fab291af3bd317a748ae06
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_2.py: 2dcc4e33b3fab291af3bd317a748ae06
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_3.py: 73a32cd279361394fffc6c6f36a9a3af
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_4.py: 4cd22e2f69a785650495d93a4f405a11
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\assignment9_5.py: 51b4a47bd0766961f4d92f7b31d4ef42
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\copy.doc: 2c06d61936103089c821515deb25c6e9
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\demo.doc: 29ae9cd21396aa242a824bd6598809c5
+C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Assignment11\dummy\demo1.doc: 2c06d61936103089c821515deb25c6e9 : Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+DirectoryFile Checksum Logger: Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+Checksum: 2dcc4e33b3fab291af3bd317a748ae06 has the following duplicate files: ['C:\\Users\\NAVNATH\\OneDrive\\Desktop\\Py\\assignments\\Assignment11\\dummy\\assignment9_2 copy.py', 'C:\\Users\\NAVNATH\\OneDrive\\Desktop\\Py\\assignments\\Assignment11\\dummy\\assignment9_2.py'] : Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+DirectoryFile Checksum Logger: Sat Jun  8 12:45:55 2024
+--------------------------------------------------------------------------------
+Checksum: 2c06d61936103089c821515deb25c6e9 has the following duplicate files: ['C:\\Users\\NAVNATH\\OneDrive\\Desktop\\Py\\assignments\\Assignment11\\dummy\\copy.doc', 'C:\\Users\\NAVNATH\\OneDrive\\Desktop\\Py\\assignments\\Assignment11\\dummy\\demo1.doc'] : Sat Jun  8 12:45:55 2024

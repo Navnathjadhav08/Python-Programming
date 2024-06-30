@@ -1,0 +1,7 @@
+2024-06-08 17:00:16,545 - INFO - Processing directory: dummy
+2024-06-08 17:00:16,546 - INFO - No duplicate files found.
+2024-06-08 17:00:16,553 - INFO - Execution time: 0.00 seconds
+2024-06-08 17:01:02,266 - INFO - Processing directory: dummy
+2024-06-08 17:01:02,269 - INFO - Duplicate files found: ['dummy\\assignment9_02.py', 'dummy\\assignment9_3.py', 'dummy\\assignment9_4 copy.py', 'dummy\\assignment9_4.py', 'dummy\\demo copy 3.doc', 'dummy\\demo copy 4.doc', 'dummy\\demo copy 5.doc', 'dummy\\demo copy.doc', 'dummy\\demo.doc']
+2024-06-08 17:01:02,271 - INFO - Duplicate files deleted successfully.
+2024-06-08 17:01:02,271 - INFO - Execution time: 0.01 seconds

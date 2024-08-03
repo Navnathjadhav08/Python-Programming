@@ -58,57 +58,60 @@ Testing data.
 Calculate Accuracy by changing value of K. 
 
 """
-import pandas as pd
+
+
+from sklearn import metrics
+from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 
-import pandas as pd
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 
-def PlayPredictor():
-    data = pd.read_csv(r"C:\Users\NAVNATH\OneDrive\Desktop\Py\assignments\Machine Learning Assignments 14-\PlayPredictor.csv")
-    # print("original data")
-    # print(data)
-    # print(data.describe())
-    l = LabelEncoder()
-    # Correct usage of fit_transform method
-    data["Whether"] = l.fit_transform(data["Whether"])
-    data["Temperature"] = l.fit_transform(data["Temperature"])
-
-    print("Encoded Data:")
-    print(data)
+def WinePredictor():
+    # load Dataset
     
-    x = data.drop("Play", axis=1)
-    y = data["Play"]
+    wine = datasets.load_wine()
     
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+    #print the names of the features
+    print(wine.feature_names)
     
+    #print the label species(class_0,class_1,class_2)
+    print(wine.target_names)
+    
+    #print the wine data (top 5   records)
+    print(wine.data[0:5])
+    
+    # print the wine labels (0:class_0,1:class_1,2:class_2)
+    print(wine.target)
+    
+    #SPLITTING dataset into training set and test set
+    X_train,X_test,Y_train,Y_test = train_test_split(wine.data,wine.target,test_size=0.3)#70% training and 30% test
+    
+    # create KNN classifier
     knn = KNeighborsClassifier(n_neighbors=3)
+     
+    #Train the model using the training sets
+    knn.fit(X_train,Y_train)
     
-    knn.fit(x_train, y_train)
+    #predict the response for test dataset
+    y_pred = knn.predict(X_test)
     
-    y_pred = knn.predict(x_test)
+    #Model Accuracy , how often is the classifier correct?
+    print("Accuracy : ",metrics.accuracy_score(Y_test,y_pred))
     
-    
-    
-    accuracy = accuracy_score(y_test, y_pred)
-    print("Accuracy:", accuracy)
+     
+
 
 def main():
-    print("--------------predict from weather and go for play or not -------------")
+    print("Machine Learning Application")
     
-    PlayPredictor()
+   
+    print("Wine predictor application using k Nearest knighbor algorithm")
+    
+    WinePredictor()
 
 
 if __name__ == "__main__":
     main()
-
-
 
 
 
